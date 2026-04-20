@@ -1,6 +1,9 @@
 # pytest-bods-fixtures
 
-A pytest plugin that exposes the canonical [bods-fixtures](https://github.com/StephenAbbott/bods-fixtures) pack as a single auto-parametrized fixture, so adapter test suites can run their pipeline against every BODS v0.4 conformance case with one line of test code.
+[![PyPI](https://img.shields.io/pypi/v/pytest-bods-v04-fixtures)](https://pypi.org/project/pytest-bods-v04-fixtures/)
+[![Python versions](https://img.shields.io/pypi/pyversions/pytest-bods-v04-fixtures)](https://pypi.org/project/pytest-bods-v04-fixtures/)
+
+A pytest plugin that exposes the canonical [bods-fixtures](https://github.com/StephenAbbott/bods-fixtures) pack ([**bods-v04-fixtures** on PyPI](https://pypi.org/project/bods-v04-fixtures/)) as a single auto-parametrized fixture, so adapter test suites can run their pipeline against every BODS v0.4 conformance case with one line of test code. Published on PyPI as [**pytest-bods-v04-fixtures**](https://pypi.org/project/pytest-bods-v04-fixtures/).
 
 ## Why
 

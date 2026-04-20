@@ -35,10 +35,13 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/StephenAbbott/pytest-bods-fixtures"
 Issues = "https://github.com/StephenAbbott/pytest-bods-fixtures/issues"
-"Fixture pack" = "https://github.com/StephenAbbott/bods-fixtures"
+PyPI = "https://pypi.org/project/pytest-bods-v04-fixtures/"
+Changelog = "https://github.com/StephenAbbott/pytest-bods-fixtures/blob/main/CHANGELOG.md"
+"Fixture pack (source)" = "https://github.com/StephenAbbott/bods-fixtures"
+"Fixture pack (PyPI)" = "https://pypi.org/project/bods-v04-fixtures/"
 
 # Pytest entry point — registers the plugin with pytest at install time
-# so users only need `pip install pytest-bods-fixtures`.
+# so users only need `pip install pytest-bods-v04-fixtures`.
 [project.entry-points.pytest11]
 bods_fixtures = "pytest_bods_fixtures.plugin"
 
