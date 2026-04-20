@@ -19,8 +19,7 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install "bods-fixtures @ git+https://github.com/StephenAbbott/bods-fixtures.git@v0.1.0"
-          pip install --no-deps -e .
+          pip install -e .
           pip install pytest pytest-cov
       - name: Test
         run: pytest -v --cov=pytest_bods_fixtures --cov-report=term-missing

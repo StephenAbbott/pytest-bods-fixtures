@@ -8,14 +8,16 @@ If you write a tool that ingests, transforms, or emits [Beneficial Ownership Dat
 
 ## Install
 
-While the project is pre-PyPI, install from the git tags directly:
-
 ```bash
-pip install "bods-fixtures @ git+https://github.com/StephenAbbott/bods-fixtures.git@v0.1.0"
-pip install --no-deps "pytest-bods-fixtures @ git+https://github.com/StephenAbbott/pytest-bods-fixtures.git@v0.1.0"
+pip install pytest-bods-v04-fixtures
 ```
 
-Once both are published to PyPI, this collapses to `pip install pytest-bods-fixtures` and the data pack resolves transitively.
+The `bods-v04-fixtures` data pack is pulled in as a dependency. The PyPI
+distribution is `pytest-bods-v04-fixtures` — the version-explicit name
+matches the data pack it parametrizes over and leaves the generic
+`pytest-bods-fixtures` name available for any future ecosystem-wide
+tooling. The pytest fixture name (`bods_fixture`) and Python import path
+(`pytest_bods_fixtures`) are unchanged.
 
 ## Use
 
@@ -61,7 +63,7 @@ def test_anonymous_owner_is_not_silently_dropped():
 
 ## Versioning
 
-`pytest-bods-fixtures` pins to a `bods-fixtures` major version. Upgrading to a new minor of `bods-fixtures` (which may add fixtures) just adds new test cases to your suite. Upgrading to a new major (which may change fixture shape) requires a new major of this plugin.
+`pytest-bods-v04-fixtures` pins to a `bods-v04-fixtures` major version. Upgrading to a new minor of the data pack (which may add fixtures) just adds new test cases to your suite. Upgrading to a new major (which may change fixture shape) requires a new major of this plugin.
 
 ## License
 

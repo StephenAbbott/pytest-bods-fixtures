@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pytest-bods-fixtures"
-version = "0.1.0"
-description = "Pytest plugin providing a parametrized fixture over the canonical bods-fixtures pack"
+name = "pytest-bods-v04-fixtures"
+version = "0.1.1"
+description = "Pytest plugin providing a parametrized fixture over the canonical BODS v0.4 fixtures pack"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.9"
@@ -23,7 +23,7 @@ classifiers = [
 ]
 dependencies = [
     "pytest>=7.0",
-    "bods-fixtures>=0.1,<0.2",
+    "bods-v04-fixtures>=0.1.1,<0.2",
 ]
 
 [project.optional-dependencies]
