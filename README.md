@@ -5,6 +5,8 @@
 
 A pytest plugin that exposes the canonical [bods-fixtures](https://github.com/StephenAbbott/bods-fixtures) pack ([**bods-v04-fixtures** on PyPI](https://pypi.org/project/bods-v04-fixtures/)) as a single auto-parametrized fixture, so adapter test suites can run their pipeline against every BODS v0.4 conformance case with one line of test code. Published on PyPI as [**pytest-bods-v04-fixtures**](https://pypi.org/project/pytest-bods-v04-fixtures/).
 
+Part of the [BODS Interoperability Toolkit](https://github.com/StephenAbbott/bods-interoperability-toolkit).
+
 ## Why
 
 If you write a tool that ingests, transforms, or emits [Beneficial Ownership Data Standard](https://standard.openownership.org/) statements, you want to know it handles the full shape of the standard — not just the happy path. The bods-fixtures pack provides that coverage (direct ownership, chains, circular ownership, joint control, declared-unknown UBOs, etc.). This plugin removes the parametrize boilerplate so you can drop the fixture into any test file and get one test per case.
